@@ -14,10 +14,14 @@ class ViewController4M: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var textField1: UITextField!
     
-
-    /*
-    // MARK: - Navigation
+    @IBOutlet weak var setText: UILabel!
+    
+    @IBAction func submitButtonTapped(_ sender: Any) {if let newTitle = textField1.text {setText.text = newTitle}
+    }
+    
+    /*// MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
